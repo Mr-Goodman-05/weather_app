@@ -18,14 +18,31 @@ def get_weather(city):
 
 def main():
     """Main function to run the weather app."""
-    print("=== Weather App ===")
-    city = input("Enter city name: ")
-
-    print(f"\nFetching weather for {city}...")
-    weather_data = get_weather(city)
-
-    #print the raw data (we'll improve this later)
-    print(weather_data)
+    print("=" * 40)
+    print("         WEATHER APP")
+    print("=" * 40)
+    
+    city = input("\nEnter city name: ")
+    
+    print(f"\nFetching weather for {city}...\n")
+    
+    try:
+        weather_data = get_weather(city)
+        
+        # Extract useful information
+        if 'main' in weather_data:
+            temp_kelvin = weather_data['main']['temp']
+            temp_celsius = temp_kelvin - 273.15
+            description = weather_data['weather'][0]['description']
+            
+            print(f"Temperature: {temp_celsius:.1f}°C")
+            print(f"Conditions: {description.capitalize()}")
+        else:
+            print("Could not retrieve weather data.")
+            print("Check your API key or city name.")
+    
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
     main()
