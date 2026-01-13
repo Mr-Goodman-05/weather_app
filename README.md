@@ -55,7 +55,7 @@ Fetching weather for London...
 ## Future Improvements
 
 - [x] Better formatted output
-- [ ] Temperature unit conversion (Celsius/Fahrenheit)
+- [x] Temperature unit conversion (Celsius/Fahrenheit)
 - [ ] 5-day forecast
 - [x] Error handling for invalid cities
 
