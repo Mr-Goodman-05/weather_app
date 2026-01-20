@@ -50,7 +50,7 @@ def display_forecast(forecast_data, unit_choice):
     
     # The API returns data every 3 hours, we'll show one per day (noon time)
     # We'll take every 8th entry (24 hours / 3 hours = 8 entries per day)
-    daily_forecasts = forecast_data['list'][::8]
+    daily_forecasts = forecast_data['list'][4::8]
     
     for forecast in daily_forecasts[:5]:  # Limit to 5 days
         # Extract data
