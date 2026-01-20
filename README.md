@@ -92,6 +92,7 @@ Date: 2026-01-22
 - [x] Temperature unit conversion (Celsius/Fahrenheit)
 - [x] 5-day forecast
 - [x] Error handling for invalid cities
+- [ ] Simple GUI
 
 ## License
 
