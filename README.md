@@ -48,15 +48,49 @@ Enter a city name when prompted.
 === Weather App ===
 Enter city name: London
 
-Fetching weather for London...
-{'weather': [{'main': 'Clouds', 'description': 'overcast clouds'}], 'main': {'temp': 280.32}}
+Choose temperature unit:
+1. Celsius (°C)
+2. Fahrenheit (°F)
+3. Both
+Enter choice (1/2/3): 1
+
+What would you like to see?
+1. Current weather only
+2. 5-day forecast only
+3. Both current weather and forecast
+Enter choice (1/2/3): 3
+
+Fetching weather data for London...
+
+========================================
+        CURRENT WEATHER
+========================================
+Temperature: 7.2°C
+Conditions: Overcast clouds
+Humidity: 81%
+
+============================================================
+              5-DAY WEATHER FORECAST
+============================================================
+
+Date: 2026-01-21
+  Temperature: 8.5°C
+  Conditions: Light rain
+  Humidity: 85%
+
+Date: 2026-01-22
+  Temperature: 6.3°C
+  Conditions: Scattered clouds
+  Humidity: 78%
+
+...
 ```
 
 ## Future Improvements
 
 - [x] Better formatted output
 - [x] Temperature unit conversion (Celsius/Fahrenheit)
-- [ ] 5-day forecast
+- [x] 5-day forecast
 - [x] Error handling for invalid cities
 
 ## License
